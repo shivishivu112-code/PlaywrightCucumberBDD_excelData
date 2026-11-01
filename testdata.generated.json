@@ -1,0 +1,38 @@
+[
+  {
+    "testID": "TC001",
+    "testName": "Login with email OTP",
+    "flag": "Y",
+    "url": "https://your-demo-app.example.com",
+    "userName": "qa.user1",
+    "password": "${ENV:TC001_PASSWORD}",
+    "emailID": "qa.mailbox@yourcompany.com"
+  },
+  {
+    "testID": "TC002",
+    "testName": "Logout after login",
+    "flag": "Y",
+    "url": "https://your-demo-app.example.com",
+    "userName": "qa.user1",
+    "password": "${ENV:TC001_PASSWORD}",
+    "emailID": "qa.mailbox@yourcompany.com"
+  },
+  {
+    "testID": "TC003",
+    "testName": "Login with wrong password shows error",
+    "flag": "N",
+    "url": "https://your-demo-app.example.com",
+    "userName": "qa.user1",
+    "password": "wrong-password",
+    "emailID": ""
+  },
+  {
+    "testID": "TC004",
+    "testName": "Login with locked user",
+    "flag": "N",
+    "url": "https://your-demo-app.example.com",
+    "userName": "qa.locked",
+    "password": "${ENV:TC004_PASSWORD}",
+    "emailID": ""
+  }
+]

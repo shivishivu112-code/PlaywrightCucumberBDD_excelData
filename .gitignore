@@ -1,0 +1,13 @@
+
+# Playwright below file will not be pushed to the repository as ignored in .gitignore file
+node_modules/
+/test-results/
+/playwright-report/
+/playwright-testReport/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.env
+reports/
+/test-data/testdata.xlsx
+/test-data/testdata.generated.json
